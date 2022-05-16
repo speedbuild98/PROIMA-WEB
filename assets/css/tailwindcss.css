@@ -1393,6 +1393,10 @@ a, button {
 .navbar-nav .nav-item a.active {
   --tw-text-opacity: 1;
   color: var(--first-color);
+  border-bottom: 4px solid var(--first-color);
+  background-color: #7099F140;
+  border-radius: 8px;
+  padding: 3px;
 }
 
 #proimaLogo{
@@ -18650,7 +18654,7 @@ a, button {
   margin-top: 4rem;
   }
   .slider::before, .slider::after {
-  background: linear-gradient(to right, var(--body-color) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100px;
   position: absolute;
