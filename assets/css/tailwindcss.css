@@ -1397,6 +1397,7 @@ a, button {
 
 #proimaLogo{
   max-width: 150px;
+  filter:drop-shadow(2px 2px 0px #00000040) 
 }
 
 /* =========== hero =========== */
@@ -1538,6 +1539,7 @@ a, button {
 #tituloProima{
   color: var(--first-color-alt);
   font-family: sans-serif;
+  filter: drop-shadow(1px 1px 1px #000000)
 }
 /* =========== service =========== */
 
@@ -18352,7 +18354,7 @@ a, button {
 /* =========== footer ========== */
 
 #logoFooter{
-  filter:drop-shadow(-2px 2px 0px #fff)
+  filter:drop-shadow(-2px 2px 5px #fff)
 }
 
 .subscribe-btn {
