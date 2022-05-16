@@ -1414,6 +1414,10 @@ a, button {
     height: 800px;
   }
 }
+@media (max-width: 500px) {
+  .header_hero {
+    height: 100%;
+  }  }
 
 .hero_shape {
   opacity: 0.4;
@@ -1540,17 +1544,7 @@ a, button {
 
 @media (min-width: 1140px){
   .header_image img{
-    max-width: 720px;
-  }
-}
-@media (max-width: 500px){
-  .header_image img{
-    width: auto;
-    display: block;
-    margin-bottom: 40px;
-  }
-  #home{
-    height:auto;
+    max-width: 500px;
   }
 }
 
