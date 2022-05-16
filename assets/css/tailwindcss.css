@@ -1559,6 +1559,9 @@ a, button {
   font-family: sans-serif;
   filter: drop-shadow(2px 2px 1px #000000)
 }
+#navLinks a{
+  font-size:1.3rem;
+}
 /* =========== service =========== */
 
 .single_services {
