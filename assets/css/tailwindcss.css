@@ -1526,6 +1526,11 @@ a, button {
 .header_image img {
   max-width: 100%;
 }
+@media (max-width: 960px){
+  .header_image img{
+    display:none;
+  }
+}
 
 @media (min-width: 960px){
   .header_image img{
@@ -1536,6 +1541,16 @@ a, button {
 @media (min-width: 1140px){
   .header_image img{
     max-width: 720px;
+  }
+}
+@media (max-width: 500px){
+  .header_image img{
+    width: auto;
+    display: block;
+    margin-bottom: 40px;
+  }
+  #home{
+    height:auto;
   }
 }
 
