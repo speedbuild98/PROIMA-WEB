@@ -1255,11 +1255,13 @@ a, button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-duration: 300ms;
+  opacity: 30%;
 }
 
 .scroll-top:hover {
   --tw-text-opacity: 1;
   background-color: var(--first-color-alt);
+  opacity: 100%;
 }
 
 .section_title .sub_title {
@@ -18317,8 +18319,7 @@ a, button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 52px;
-  padding-left: 20px;
-  padding-right: 20px;
+
   top: 0px;
   left: 0px;
   width: 100%;
@@ -18339,8 +18340,11 @@ a, button {
   max-width: 100%;
 }
 
-@media (min-width: 960px){
-  .contact_image img{
+@media (max-width: 960px){
+  .contact_image{
+    justify-content: center;
+  }
+  #contactoImg{
     max-width: 720px;
     width: auto;
   }
