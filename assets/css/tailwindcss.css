@@ -1385,11 +1385,18 @@ a, button {
     padding-top: 4px;
     padding-bottom: 4px;
   }
+  #proimaLogo{
+    min-width: 250px;
+  }
 }
 
 .navbar-nav .nav-item a.active {
   --tw-text-opacity: 1;
   color: var(--first-color);
+}
+
+#proimaLogo{
+  max-width: 150px;
 }
 
 /* =========== hero =========== */
@@ -1614,7 +1621,7 @@ a, button {
 }
 
 .services_shape {
-  fill: #fff1f1;
+  fill: #f1f3ff;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
