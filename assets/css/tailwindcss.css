@@ -1595,9 +1595,17 @@ a, button {
   border-width: 2px;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 52px;
   padding-bottom: 52px;
+  max-height: 500px;
+  overflow-y: scroll;
 }
+
+.single_services::-webkit-scrollbar{
+  width: 10px;
+  background-color: var(--first-color);
+  outline: 2px solid var(--first-color-alt);
+}
+
 
 .single_services:hover{
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
