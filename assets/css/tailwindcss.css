@@ -1588,7 +1588,7 @@ a, button {
   border-width: 2px;
   padding-left: 24px;
   padding-right: 24px;
-  padding-bottom: 52px;
+  padding-bottom: 20px;
   max-height: 420px;
   overflow-y: scroll;
 }
@@ -1623,7 +1623,7 @@ a, button {
     padding-left: 16px;
     padding-right: 16px; 
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 10px;
   }
 }
 
@@ -1632,7 +1632,7 @@ a, button {
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 52px;
-    padding-bottom: 52px;
+    padding-bottom: 15px;
   }
 }
 
