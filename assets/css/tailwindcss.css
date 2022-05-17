@@ -1596,14 +1596,20 @@ a, button {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 52px;
-  max-height: 500px;
+  max-height: 420px;
   overflow-y: scroll;
 }
 
 .single_services::-webkit-scrollbar{
-  width: 10px;
+  width: 5px;
   background-color: var(--first-color);
-  outline: 2px solid var(--first-color-alt);
+  outline: 3px solid var(--first-color-alt);
+  cursor: pointer;
+}
+.single_services::-webkit-scrollbar:hover{
+  width: 5px;
+  background-color: var(--first-color-alt);
+  outline: 3px solid var(--first-color-alt);
 }
 
 
