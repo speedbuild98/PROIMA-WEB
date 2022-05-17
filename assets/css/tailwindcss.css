@@ -1589,7 +1589,7 @@ a, button {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
-  max-height: 420px;
+  height: 420px;
   overflow-y: scroll;
 }
 
@@ -1690,7 +1690,7 @@ a, button {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 52px;
+  margin-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
   top: 0px;
@@ -1735,7 +1735,9 @@ a, button {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
   width: 28px;
 }
-
+#why{
+  padding-top:20px;
+}
 /* ======= work ======== */
 
 .single_item {
