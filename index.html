@@ -53,7 +53,14 @@
     </div>
 
     <!--====== PRELOADER PART ENDS ======-->
-    
+<script>function openNav() {
+    document.getElementById("mySidenav").style.width = "50%";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}</script>
     <!--====== HEADER PART START ======-->
 
     <section class="header_area">
@@ -65,12 +72,27 @@
                             <a class="navbar-brand mr-5" href="index.html">
                                 <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="50" data-aos-once="true" id="proimaLogo" src="assets/images/logo.png" alt="Logo">
                             </a>
-                            <button class="block navbar-toggler focus:outline-none lg:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-
+                            <i onclick="openNav()" class="uil uil-apps"></i>
+                            <div id="mySidenav" class="sidenav" style="width: 50%;">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                                <ul id="nav" class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll active" href="#home"><i class="uil uil-home"></i>Inicio</a>
+                                    </li>
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="#about"><i class="uil uil-chat-bubble-user"></i>Nosotros</a>
+                                    </li>
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="#services"><i class="uil uil-bolt-alt"></i>Servicios</a>
+                                    </li>
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="#obras"><i class="uil uil-constructor"></i>Obras</a>
+                                    </li>
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="#contact"><i class="uil uil-envelope"></i>Contacto</a>
+                                    </li>
+                                </ul>
+                              </div>
                             <div id="navLinks" class="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white lg:w-auto collapse navbar-collapse lg:block top-full mt-full lg:static lg:bg-transparent shadow lg:shadow-none" id="navbarOne">
                                 <ul id="nav" class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
                                     <li class="nav-item ml-5 lg:ml-11">
@@ -110,13 +132,13 @@
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
-            <div class="header_shape hidden lg:block"></div>
+            <div  class="header_shape hidden lg:block"></div>
 
-            <div class="header_image flex items-center">
+            <div id="about" class="header_image flex items-center">
                 <div class="home__scroll">
                     <a href="#about" class="gradient-border home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span id="about" class="home__scroll-name">Ir abajo</span>
+                        <span class="home__scroll-name">Ir abajo</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
                 </div>
@@ -282,7 +304,7 @@
                         </div>
                         <div class="services_content mt-5 xl:mt-10">
                             <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">GRUPOS ELECTRÓGENOS</h3>
-                            <p class="mt-4">Como representantes de la firma PALMERO en Córdoba  ofrecemos equip+ços desde 2 Kva hasta 2000 Kva, cálculo y asesoramiento técnico ante la compra de un grupo e instalación del mismo.
+                            <p class="mt-4">Como representantes de la firma PALMERO en Córdoba  ofrecemos equipos desde 2 Kva hasta 2000 Kva, cálculo y asesoramiento técnico ante la compra de un grupo e instalación del mismo.
                                 Contamos con un servicio de mantenimiento preventivo y correctivo a medida del cliente, realizando desde la puesta en servicio de un nuevo grupo como el diagnóstico de fallas, o la automatización de grupos en funcionamiento.
                             </p>
                         </div>
@@ -313,7 +335,7 @@
                             </svg>
                         </div>
                         <div class="services_content mt-5 xl:mt-10">
-                            <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">ACONDICIONADORES DE AIRE Y CALEFACCIÓN</h3>
+                            <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">A.A. Y CALEFACCIÓN</h3>
                             <p class="mt-4">Somos Agentes Oficiales de la firma TRANE, líder mundial en sistemas de acondicionamiento de aire. PROIMA ofrece el proyecto y la ejecución de instalaciones centrales y puntuales, balance térmico, análisis de aire ambiente y desarrollos específicos. Contamos con personal capacitado para realizar tareas de mantenimiento preventivo y correctivo de equipos individuales y centrales.</p>
                         </div>
                     </div> <!-- single services -->
@@ -561,8 +583,8 @@
             <div class="footer_copyright pt-3 pb-6 border-t-2 border-solid border-white border-opacity-10 sm:flex justify-between">
                 <div class="footer_social pt-4 mx-3 text-center">
                     <ul class="social flex justify-center sm:justify-start">
-                        <li class="mr-3"><a href="https://facebook.com/uideckHQ"><i class="lni lni-facebook-filled"></i></a></li>
-                        <li class="mr-3"><a href="https://twitter.com/uideckHQ"><i class="lni lni-github-filled"></i></a></li>
+                        <li class="mr-3"><a href="https://cafecito.app/speedbuild"><i class="uil uil-coffee"></i></i></a></li>
+                        <li class="mr-3"><a href="https://github.com/speedbuild98"><i class="uil uil-github-alt"></i></a></li>
                         <li class="mr-3"><a href="https://www.linkedin.com/in/lautagallardogg/"><i class="lni lni-linkedin-original"></i></a></li>
                     </ul>
                 </div> <!-- footer social -->

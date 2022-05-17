@@ -385,23 +385,10 @@ body {
   border-color: currentColor; /* 2 */
 }
 
-/*
- * Ensure horizontal rules are visible by default
- */
-
 hr {
   border-top-width: 1px;
 }
 
-/**
- * Undo the `border-style: none` reset that Normalize applies to images so that
- * our `border-{width}` utilities have the expected effect.
- *
- * The Normalize reset is unnecessary for us since we default the border-width
- * to 0 on all elements.
- *
- * https://github.com/tailwindcss/tailwindcss/issues/362
- */
 
 img {
   border-style: solid;
@@ -442,23 +429,14 @@ h6 {
   font-weight: inherit;
 }
 
-/**
- * Reset links to optimize for opt-in styling instead of
- * opt-out.
- */
+
 
 a {
   color: inherit;
   text-decoration: inherit;
 }
 
-/**
- * Reset form element properties that are easy to forget to
- * style explicitly so you don't inadvertently introduce
- * styles that deviate from your design system. These styles
- * supplement a partial reset that is already applied by
- * normalize.css.
- */
+
 
 button,
 input,
@@ -470,12 +448,6 @@ textarea {
   color: inherit;
 }
 
-/**
- * Use the configured 'mono' font family for elements that
- * are expected to be rendered with a monospace font, falling
- * back to the system monospace stack if there is no configured
- * 'mono' font family.
- */
 
 pre,
 code,
@@ -484,13 +456,6 @@ samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-/**
- * Make replaced elements `display: block` by default as that's
- * the behavior you want almost all of the time. Inspired by
- * CSS Remedy, with `svg` added as well.
- *
- * https://github.com/mozdevs/cssremedy/issues/14
- */
 
 img,
 svg,
@@ -503,12 +468,6 @@ object {
   display: block;
 }
 
-/**
- * Constrain images and videos to the parent width and preserve
- * their instrinsic aspect ratio.
- *
- * https://github.com/mozdevs/cssremedy/issues/14
- */
 
 img,
 video {
@@ -18809,3 +18768,112 @@ a, button {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+.sidenav {
+  display:flex;
+  flex-direction: column;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #fff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  border-left: 3px solid var(--first-color-alt);
+}
+
+.sidenav .uil{
+padding-right:10px;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--b);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+  color: var(--first-color);
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  color:  var(--first-color-alt);
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.closebtn{
+animation: wiggle 4s infinite;
+}
+.sidenav .closebtn:hover{
+border: none;
+color: red;
+cursor: pointer;
+}
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+ 80% { transform: rotate(0deg); }
+ 85% { transform: rotate(5deg); }
+ 95% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+
+
+.uil-apps{
+font-size: 2rem;
+color: var(--first-color-alt);
+position: relative;
+top: 0;
+right: 0;
+transition: .5s;
+}
+
+
+.uil-apps:hover{
+color: red;
+cursor: pointer;
+}
+@keyframes wiggle {
+0% { transform: rotate(0deg); }
+80% { transform: rotate(0deg); }
+85% { transform: rotate(5deg); }
+95% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+
+.uil-apps {
+display: inline-block;
+animation: wiggle 2.5s infinite;
+}
+
+.uil-apps:hover {
+animation: none;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (min-width: 960px) {
+  .sidenav,
+  .uil-apps {display:none;}
+}
+
